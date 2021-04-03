@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PastanestokModelStoreContainer" CdmEntityContainer="PastanestokEntities">
+    <EntitySetMapping Name="adminler">
+      <EntityTypeMapping TypeName="PastanestokModel.adminler">
+        <MappingFragment StoreEntitySet="adminler">
+          <ScalarProperty Name="adminid" ColumnName="adminid" />
+          <ScalarProperty Name="adminad" ColumnName="adminad" />
+          <ScalarProperty Name="adminsifre" ColumnName="adminsifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kategoriler">
+      <EntityTypeMapping TypeName="PastanestokModel.kategoriler">
+        <MappingFragment StoreEntitySet="kategoriler">
+          <ScalarProperty Name="kategoriid" ColumnName="kategoriid" />
+          <ScalarProperty Name="kategoriad" ColumnName="kategoriad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="musteriler">
+      <EntityTypeMapping TypeName="PastanestokModel.musteriler">
+        <MappingFragment StoreEntitySet="musteriler">
+          <ScalarProperty Name="musteriid" ColumnName="musteriid" />
+          <ScalarProperty Name="musteriad" ColumnName="musteriad" />
+          <ScalarProperty Name="musterisoyad" ColumnName="musterisoyad" />
+          <ScalarProperty Name="musteritel" ColumnName="musteritel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="satislar">
+      <EntityTypeMapping TypeName="PastanestokModel.satislar">
+        <MappingFragment StoreEntitySet="satislar">
+          <ScalarProperty Name="satisid" ColumnName="satisid" />
+          <ScalarProperty Name="urun" ColumnName="urun" />
+          <ScalarProperty Name="musteri" ColumnName="musteri" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="urunler">
+      <EntityTypeMapping TypeName="PastanestokModel.urunler">
+        <MappingFragment StoreEntitySet="urunler">
+          <ScalarProperty Name="urunid" ColumnName="urunid" />
+          <ScalarProperty Name="urunad" ColumnName="urunad" />
+          <ScalarProperty Name="urunkategori" ColumnName="urunkategori" />
+          <ScalarProperty Name="urunstok" ColumnName="urunstok" />
+          <ScalarProperty Name="urunfiyat" ColumnName="urunfiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
